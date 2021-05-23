@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hàm pop</title>
+</head>
+<body>
+	<input type="button" onclick="pop1()" value="pop">
+    <p id="out"></p>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6]
+
+    function pop1() {
+        arr[arr.length - 1] = null
+        arr.length = arr.length -1
+        document.getElementById("out").innerHTML = arr
+    }
+</script>
+</body>
+</html>
